@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<form method="post">
+<table>
+    
+    <tr>
+        <td>Enter your Name:</td>
+        <td><input type="text" name="name" /></td>
+    </tr>
+    <tr>
+        <td>Enter sub 1 Marks:</td>
+        <td><input type="text" name="sub1" /></td>
+    </tr>
+    <tr>
+        <td>Enter sub 2 Marks:</td>
+        <td><input type="text" name="sub2" /></td>
+    </tr>
+    <tr>
+        <td>Enter sub 3 Marks:</td>
+        <td><input type="text" name="sub3" /></td>
+    </tr>
+    <tr>
+        <td>Enter sub 4 Marks:</td>
+        <td><input type="text" name="sub4" /></td>
+    </tr>
+    <tr>
+        <td>Enter sub 5 Marks:</td>
+        <td><input type="text" name="sub5" /></td>
+    </tr>
+    <tr>
+        <td>
+        </td>
+        <td><input type="Submit" name="submit"  /></td>
+    </tr>
+    
+</table>
+<br />
+
+<table>
+    
+    <tr>
+        <td>Name</td>
+        <td>sub1</td>
+        <td>sub2</td>
+        <td>sub3</td>
+        <td>sub4</td>
+        <td>sub5</td>
+    </tr>
+     <tr>
+        <td><input type="text" value="@ViewBag.name" name="name" /></td>
+        <td><input type="text" value="@ViewBag.Sub1" name="Sub1" /></td>
+        <td><input type="text" value="@ViewBag.Sub2" name="Sub2" /></td>
+        <td><input type="text" value="@ViewBag.Sub3" name="Sub3" /></td>
+        <td><input type="text" value="@ViewBag.Sub4" name="Sub4" /></td>
+        <td><input type="text" value="@ViewBag.Sub5" name="Sub5" /></td>
+    </tr>
+    <tr><td>Total</td>
+        <td>Average</td>
+        <td>Result</td>
+    </tr>
+   
+    <tr>
+        <td><input type="text" value="@ViewBag.total" name="total" /></td>
+        <td><input type="text" value="@ViewBag.Average" name="Average" /></td>
+        <td><input type="text" value="@ViewBag.Result" name="Result" /></td>
+    </tr>
+    
+</table>
+</form>
